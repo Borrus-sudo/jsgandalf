@@ -33,25 +33,29 @@
         flex
         items-center
         justify-center
-        sm:ml-auto
         md:ml-auto
         lg:ml-auto
         xl:ml-auto
         2xl:ml-auto
+        flex-wrap
         p-2
+        space-x-10
       "
     >
-      <div class="mr-10 ml-auto hover:underline">
+      <div class="hover:underline">
         <router-link class="hrefs" to="/" exact>Home</router-link>
       </div>
-      <div class="mr-10 ml-auto hover:underline">
+      <div class="hover:underline">
         <router-link class="hrefs" to="/blog" exact>Blog</router-link>
       </div>
-      <div class="mr-10 ml-auto hover:underline">
+      <div class="hover:underline">
         <router-link class="hrefs" to="/about" exact>About</router-link>
       </div>
-      <div class="hover:underline ml-auto">
+      <div class="hover:underline">
         <router-link class="hrefs" to="/podcast" exact>Podcast</router-link>
+      </div>
+      <div class="hover:underline">
+        <router-link class="hrefs" to="/podcast" exact>Projects</router-link>
       </div>
     </nav>
   </div>
@@ -76,5 +80,8 @@ export default defineComponent({
   display: inline-block;
   width: 100%;
   background: var(--gradient);
+}
+.router-link-active {
+  @apply underline;
 }
 </style>

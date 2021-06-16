@@ -1,17 +1,17 @@
 <template>
-  <div class="py-10">
+  <div class="py-12">
     <div class="text-center">
       <h1
         class="
           text-4xl
-          tracking-tight
+          tracking-tighter
           font-bold
           text-gray-900
           sm:text-5xl
           md:text-6xl
         "
       >
-        <span class="block tracking-wide break-words xl:inline text-white"
+        <span class="block tracking-tight break-words xl:inline text-white"
           >JSGandalf(he/him)</span
         >
         <span class="block text-indigo-600 xl:inline">Web Artisan</span>
@@ -34,7 +34,6 @@
       <div class="mt-5 sm:mt-8 sm:flex justify-center mx-4">
         <div class="rounded-md shadow">
           <a
-            href="#"
             class="
               w-full
               flex
@@ -52,14 +51,15 @@
               md:py-4
               md:text-lg
               md:px-10
+              cursor-pointer
             "
+            @click="$router.push({ name: 'Blog' })"
           >
             Read my blog
           </a>
         </div>
         <div class="mt-3 sm:mt-0 sm:ml-3">
           <a
-            href="#"
             class="
               w-full
               flex
@@ -77,7 +77,9 @@
               md:py-4
               md:text-lg
               md:px-10
+              cursor-pointer
             "
+            @click="$router.push({ name: 'Podcast' })"
           >
             Tune in
           </a>
