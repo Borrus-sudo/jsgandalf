@@ -1,8 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer components {
-    .hero-btn {
-        @apply bg-gradient-to-tr text-transparent from-purple-400 to-pink-500 bg-clip-text;
-    }
+@layer components {}
+
+:root {
+    --yellow: #ffe742;
+    --pink: #f0a1d3;
+    --blue: #87ffeb;
+    --select-color: #fde047;
+    --gradient: linear-gradient( 2deg, var(--pink) 20%, var(--yellow) 50%, var(--blue) 100%);
+}
+
+html,
+body {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: var(--select-color);
+    color: black;
 }

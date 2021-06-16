@@ -4,7 +4,6 @@
 
 <script lang="ts">
 import { defineComponent, PropType } from "vue";
-
 export default defineComponent({
   name: "listBlogs",
   props: {
@@ -12,6 +11,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style scoped>
-</style>
