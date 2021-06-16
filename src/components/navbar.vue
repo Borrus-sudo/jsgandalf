@@ -45,13 +45,13 @@
         <router-link class="hrefs" to="/" exact>Home</router-link>
       </div>
       <div class="mr-10 ml-auto hover:underline">
-        <router-link class="hrefs" to="/about" exact>Blog</router-link>
+        <router-link class="hrefs" to="/blog" exact>Blog</router-link>
       </div>
       <div class="mr-10 ml-auto hover:underline">
         <router-link class="hrefs" to="/about" exact>About</router-link>
       </div>
       <div class="hover:underline ml-auto">
-        <router-link class="hrefs" to="/about" exact>Podcast</router-link>
+        <router-link class="hrefs" to="/podcast" exact>Podcast</router-link>
       </div>
     </nav>
   </div>
