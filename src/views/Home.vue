@@ -28,7 +28,7 @@
           mx-auto
         "
       >
-        Hey I am JSGandalf ,a web dev and game dev enthusiast with passion for
+        Hey I am JSGandalf, a web dev and game dev enthusiast with passion for
         @VueJS and @GraphQL
       </p>
       <div class="mt-5 sm:mt-8 sm:flex justify-center mx-4">
