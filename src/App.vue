@@ -1,7 +1,7 @@
 <template>
   <div>
     <app-navbar />
-    <div class="mt-28"><router-view></router-view></div>
+    <div class="mt-20"><router-view></router-view></div>
     <app-footer />
   </div>
 </template>
