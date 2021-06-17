@@ -1,6 +1,6 @@
 <template>
-  <!-- <teleport to="body"> -->
-  <footer class="mt-auto absolute bottom-0" id="footer">
+  <teleport to="body">
+  <footer class="mt-auto" id="footer">
     <ul class="flex">
       <li class="text-white">
         &copy; Copyright {{ new Date().getFullYear() }}JSGandalf
@@ -34,7 +34,7 @@
       </li>
     </ul>
   </footer>
-  <!-- </teleport> -->
+  </teleport>
 </template>
 <script>
 import { defineComponent } from "vue";

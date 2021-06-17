@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col">
+  <div>
     <app-navbar />
     <div class="mt-28"><router-view></router-view></div>
     <app-footer />
