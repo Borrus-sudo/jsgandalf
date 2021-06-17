@@ -1,13 +1,13 @@
 <template>
   <div class="py-8 px-10">
     <div class="space-y-10">
-      <div v-for="(blog, key) in blogs" :key="key">
+      <div v-for="blog in blogs" :key="blog._id">
         <card
           :title="blog.message.split('</h5>')[0] + '</h5>'"
           :content="blog.message"
           :stars="blog.star"
           :time="blog.time"
-/>
+        />
       </div>
     </div>
   </div>
