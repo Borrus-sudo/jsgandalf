@@ -1,5 +1,5 @@
 <template>
-  <div class="py-8 px-10">
+  <div class="py-10 px-10">
     <div class="space-y-10">
       <div v-for="blog in blogs" :key="blog._id">
         <card
