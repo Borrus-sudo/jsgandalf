@@ -42,19 +42,19 @@
         space-x-10
       "
     >
-      <div class="hover:underline">
+      <div class="hover:text-gray-200">
         <router-link class="hrefs" to="/" exact>Home</router-link>
       </div>
-      <div class="hover:underline">
+      <div class="hover:text-gray-200">
         <router-link class="hrefs" to="/blog" exact>Blog</router-link>
       </div>
-      <div class="hover:underline">
+      <div class="hover:text-gray-200">
         <router-link class="hrefs" to="/about" exact>About</router-link>
       </div>
-      <div class="hover:underline">
+      <div class="hover:text-gray-200">
         <router-link class="hrefs" to="/podcast" exact>Podcast</router-link>
       </div>
-      <div class="hover:underline">
+      <div class="hover:text-gray-200">
         <router-link class="hrefs" to="/podcast" exact>Projects</router-link>
       </div>
     </nav>
