@@ -41,3 +41,8 @@ export default defineComponent({
   },
 });
 </script>
+<style scoped>
+.svg:hover {
+  @apply fill-current text-gray-300;
+}
+</style>
