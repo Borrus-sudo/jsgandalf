@@ -30,6 +30,14 @@
       >
         Hey I am JSGandalf, a web dev and game dev enthusiast with passion for
         @VueJS and @GraphQL
+        <span
+          class="
+            h-5
+            w-2
+            inline-block
+            blinking
+          "
+        ></span>
       </p>
       <div class="mt-5 sm:mt-8 sm:flex justify-center mx-4">
         <div class="rounded-md shadow">
@@ -95,3 +103,22 @@ export default defineComponent({
   name: "Home",
 });
 </script>
+
+
+<style  scoped>
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.blinking {
+  background-color:#ABACB0 ;
+  animation-duration: 0.39s;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+</style>
