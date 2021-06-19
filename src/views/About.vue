@@ -9,7 +9,7 @@
       improving <abbr title="developer experience">DX</abbr> of Vue developers.
       He is a staunch believer in the tagline "Don't be Dinesh!". His hobbies
       include: Chess, Pixel Art and exploring softwares. This website is built
-      using tailwindCSS, vuejs, typescript and graphQl and powered via Vercel.
+      using TailwindCSS, Vuejs, Typescript and GraphQl and powered via Vercel.
     </div>
     <button
       class="
