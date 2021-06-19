@@ -5,8 +5,8 @@
     </h1>
     <div class="break-words leading-loose">
       The page you were looking for is not found.
-      <br>
-      <br>
+      <br />
+      <br />
       <button
         class="
           bg-transparent
@@ -21,7 +21,7 @@
           w-30
           h-10
         "
-        @click="$router.push({name:'Home'})"
+        @click="$router.push({ name: 'Home' })"
       >
         Back to Home Page
       </button>
@@ -30,7 +30,6 @@
 </template>
 <script>
 import { defineComponent } from "vue";
-
 export default defineComponent({
   name: "404Page",
 });

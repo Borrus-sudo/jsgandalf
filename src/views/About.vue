@@ -32,11 +32,9 @@
 </template>
 <script>
 import { defineComponent } from "vue";
-import blogs from "@/utils/fetchBlogs";
 export default defineComponent({
   setup() {
     const date = new Date();
-    console.log(blogs);
     return { year: date.getFullYear() };
   },
 });

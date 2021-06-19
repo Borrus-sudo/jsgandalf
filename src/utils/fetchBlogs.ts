@@ -10,7 +10,7 @@ const data = reactive<blogs>({ blogs: [], start: 0, end: 5 });
   const url = "https://jdev.glitch.me/post/getPost";
   const res = await fetch(url);
   const json = await res.json();
-  json.forEach((element: blog) => {
+  json.forEach((element:blog) => {
     data.blogs.push(element);
   });
   data.blogs.sort((a, b) => (a.time >= b.time ? 1 : -1));
