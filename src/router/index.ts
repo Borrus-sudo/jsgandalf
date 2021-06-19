@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 import Home from "../views/Home.vue";
-
+import PageNotFound from "../views/404Page.vue";
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
@@ -23,6 +23,11 @@ const routes: Array<RouteRecordRaw> = [
     name: "Podcast",
     component: () =>
       import(/* webpackChunkName: "podcast" */ "../views/Podcast.vue"),
+  },
+  {
+    path: "/:pathMatch(.*)",
+    name: "404Page",
+    component:PageNotFound,
   },
 ];
 
