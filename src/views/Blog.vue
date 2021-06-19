@@ -2,7 +2,7 @@
   <div class="py-10 px-10">
     <div class="space-y-10">
       <div v-if="loaded">
-        <div v-for="blog in data.blogs" :key="blog._id">
+        <div v-once v-for="blog in data.blogs" :key="blog._id">
           <card
             :title="blog.message.split('</h5>')[0] + '</h5>'"
             :content="blog.message"
@@ -26,7 +26,9 @@ export default defineComponent({
   name: "Blog",
   components: { card, loading },
   setup() {
-    const loaded = ref(false);
+    const loaded = ref(
+      data.blogs.length >= data.end - data.start + 1 ? true : false
+    );
     watch(data.blogs, () => {
       loaded.value = true;
     });
