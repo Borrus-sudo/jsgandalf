@@ -4,7 +4,15 @@ interface project {
   url: string;
   description: string;
 }
-const projects = reactive<project[]>([]);
+interface exportType {
+  projects: project[];
+  owner: { login: string; avatar_url: string };
+}
+const toExport = reactive<exportType>({
+  projects: [],
+  owner: { login: "", avatar_url: "" },
+});
+
 (async () => {
   const url = "https://api.github.com/users/Borrus-sudo/repos";
   const json = await fetch(url);
@@ -12,12 +20,13 @@ const projects = reactive<project[]>([]);
   const {
     owner: { login, avatar_url },
   } = data[0];
-  console.log(login, avatar_url);
-  data.array.forEach((work: any, index: number) => {
+  toExport.owner.login = login;
+  toExport.owner.avatar_url = avatar_url;
+  data.forEach((work: any, index: number) => {
     if (index != 0) {
       const { full_name: name, html_url: url, description } = work;
-      projects.push({ name, url, description });
+      toExport.projects.push({ name, url, description });
     }
   });
 })();
-export default projects;
+export default toExport;

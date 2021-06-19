@@ -2,12 +2,14 @@
   <div>Project</div>
 </template>
 <script>
-import { defineComponent } from "vue";
-import projects from "@/utils/fetchProjects";
+import { defineComponent, watch } from "vue";
+import data from "@/utils/fetchProjects";
 export default defineComponent({
   name: "Project",
   setup() {
-    console.log(projects);
+    watch(data.projects,()=>{
+     console.log(data.projects);
+    });
   },
 });
 </script>

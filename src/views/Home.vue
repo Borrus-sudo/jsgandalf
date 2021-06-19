@@ -26,9 +26,10 @@
           md:mt-5
           md:text-xl
           mx-auto
+          px-1
         "
       >
-        Hey I am JSGandalf, a web dev and game dev enthusiast with passion for
+        Hey I am JSGandalf, a web dev and game dev enthusiast with a passion for
         @VueJS and @GraphQL
         <span
           class="
