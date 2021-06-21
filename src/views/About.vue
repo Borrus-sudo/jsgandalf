@@ -1,7 +1,7 @@
 <template>
   <div class="py-10 px-12 space-y-4">
     <h1 class="font-extrabold text-2xl underline tracking-wide">About me</h1>
-    <div class="break-words leading-loose">
+    <div class="break-words leading-loose text-sm text-gray-300">
       JSGandalf(he/him) (a.k.a BorrisX) is a
       {{ year - 2006 }} year old self-taught junior full stack web developer
       (P.S. soon to be senior).He is also a game dev enthusiastic and a Potter
