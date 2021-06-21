@@ -20,6 +20,7 @@
         class="
           mt-3
           text-base text-gray-500
+          leading-looser
           sm:mt-5
           sm:text-lg
           sm:max-w-xl

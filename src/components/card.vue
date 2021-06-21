@@ -1,8 +1,8 @@
 <template>
   <div class="flex flex-col text-left max-w-lg">
-    <div class="text-base text-gray-400">{{time}} . 4 min read</div>
-    <div class="underline font-bold text-2xl" v-html="title"></div>
-    <div class="break-words leading-loose text-lg">
+    <div class="text-gray-400 text-sm">{{time}}  .  4 min read</div>
+    <div class="underline font-bold text-xl" v-html="title"></div>
+    <div class="break-words leading-loose text-md">
       LoremIpsumDocet>LoremIpsumDocet>LoremIpsumDocet>LoremIpsumDocet>LoremIpsumDocet>LoremIpsumDocet
     </div>
     <br />
@@ -20,7 +20,7 @@
         rounded
         w-24
         h-10
-        mb-2
+        mb-4
       "
     >
       Read
