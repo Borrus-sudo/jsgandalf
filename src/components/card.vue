@@ -2,7 +2,7 @@
   <div class="flex flex-col text-left max-w-lg">
     <div class="text-base text-gray-400">{{time}} . 4 min read</div>
     <div class="underline font-bold text-2xl" v-html="title"></div>
-    <div class="break-words text-lg">
+    <div class="break-words leading-loose text-lg">
       LoremIpsumDocet>LoremIpsumDocet>LoremIpsumDocet>LoremIpsumDocet>LoremIpsumDocet>LoremIpsumDocet
     </div>
     <br />
