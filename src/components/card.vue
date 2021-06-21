@@ -1,11 +1,10 @@
 <template>
   <div class="flex flex-col text-left max-w-lg">
-    <div class="text-gray-400 text-sm">{{time}}  .  4 min read</div>
-    <div class="underline font-bold text-xl" v-html="title"></div>
-    <div class="break-words leading-loose text-md">
+    <pre class="text-gray-400 text-sm font-sans">{{time}} . 4 min read</pre>
+    <div class="underline font-bold text-lg" v-html="title"></div>
+    <div class="break-words leading-loose text-sm mb-2">
       LoremIpsumDocet>LoremIpsumDocet>LoremIpsumDocet>LoremIpsumDocet>LoremIpsumDocet>LoremIpsumDocet
     </div>
-    <br />
     <button
       class="
         bg-transparent
@@ -13,14 +12,13 @@
         text-blue-700
         font-semibold
         hover:text-white
-        py-2
-        px-4
         border border-blue-500
         hover:border-transparent
         rounded
-        w-24
-        h-10
+        w-20
+        h-8
         mb-4
+        text-sm
       "
     >
       Read
