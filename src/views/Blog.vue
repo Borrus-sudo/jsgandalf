@@ -10,8 +10,9 @@
                 Math.floor(Math.random() * 2 + 1)
               )
             "
+            url=""
+            :meta="blog.time + ' . 4 min read'"
             :stars="blog.star"
-            :meta="blog.time+' . 4 min read'"
           />
         </div>
       </div>

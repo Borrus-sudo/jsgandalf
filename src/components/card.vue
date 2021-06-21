@@ -1,14 +1,11 @@
 <template>
-  <div
-    @click="window.location.href=url"
-    class="flex flex-col text-left max-w-lg cursor-pointer"
-  >
+  <a class="flex flex-col text-left max-w-lg cursor-pointer" target="_blank" :href="url">
     <div class="text-gray-500 text-sm font-sans" v-html="meta"></div>
     <div class="font-bold text-lg underline" v-html="title"></div>
-    <div class="break-words leading-loose text-sm mb-8 text-gray-300">
+    <div class="break-words leading-loose text-sm mb-8 text-gray-400">
       {{ content }}
     </div>
-  </div>
+  </a>
 </template>
 
 <script lang="ts">

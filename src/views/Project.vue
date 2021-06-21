@@ -8,6 +8,7 @@
             :content="project.description || 'Random joke:nothing'"
             :meta="svg + project.url"
             :url="project.url"
+            stars=""
           />
         </div>
       </div>
