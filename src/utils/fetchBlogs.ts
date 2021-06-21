@@ -1,4 +1,5 @@
 import { reactive } from "vue";
+import called from "./keepTrack";
 type blog = { content: string; time: string; star: number; _id: string };
 interface blogs {
   blogs: Array<blog>;
@@ -12,6 +13,7 @@ const data = reactive<blogs>({ blogs: [], start: 1, end: 5 });
   const json = await res.json();
   json.forEach((element:blog) => {
     data.blogs.push(element);
+    called.calledBlogs.push(element._id);
   });
 })();
 export default data;
