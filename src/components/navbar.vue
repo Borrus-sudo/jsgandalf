@@ -18,9 +18,9 @@
       @click="$router.push({ name: 'Home' })"
     >
       <img
-        src="https://cdn.discordapp.com/attachments/794776655763341312/795237122721710090/unknown.png"
+        src="@/assets/icon.png"
         alt=""
-        class="favicon mr-2"
+        class="favicon mr-2 object-cover object-center"
       />
       <div>
         <div class="font-extrabold tracking-wider text-xl">JSGandalf</div>
@@ -70,8 +70,8 @@ export default defineComponent({
 </script>
 <style scoped>
 .favicon {
-  width: 56px;
-  height: 50px;
+  width: 60px;
+  height: 57px;
   border-radius: 50%;
 }
 #navbar::after {

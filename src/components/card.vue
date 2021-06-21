@@ -20,6 +20,7 @@
         rounded
         w-24
         h-10
+        mb-2
       "
     >
       Read
