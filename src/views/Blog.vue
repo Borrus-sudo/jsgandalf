@@ -5,9 +5,13 @@
         <div v-once v-for="blog in data.blogs" :key="blog._id">
           <card
             :title="blog.message.split('</h5>')[0] + '</h5>'"
-            :content="blog.message"
+            :content="
+              'LoremIpsumDocet>LoremIpsumDocet>LoremIpsumDocet'.repeat(
+                Math.floor(Math.random() * 2 + 1)
+              )
+            "
             :stars="blog.star"
-            :time="blog.time"
+            :meta="blog.time+' . 4 min read'"
           />
         </div>
       </div>

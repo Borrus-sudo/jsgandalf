@@ -1,9 +1,12 @@
 <template>
-  <div @click="null;" class="flex flex-col text-left max-w-lg cursor-pointer">
-    <div class="text-gray-500 text-sm font-sans">{{time}} . 4 min read</div>
+  <div
+    @click="window.location.href=url"
+    class="flex flex-col text-left max-w-lg cursor-pointer"
+  >
+    <div class="text-gray-500 text-sm font-sans" v-html="meta"></div>
     <div class="font-bold text-lg underline" v-html="title"></div>
     <div class="break-words leading-loose text-sm mb-8 text-gray-300">
-      {{"LoremIpsumDocet>LoremIpsumDocet>LoremIpsumDocet".repeat(Math.floor((Math.random() *2) + 1))}}
+      {{ content }}
     </div>
   </div>
 </template>
@@ -16,7 +19,8 @@ export default defineComponent({
     title: String as PropType<string>,
     content: String as PropType<string>,
     stars: Number as PropType<number>,
-    time:String as PropType<string>
+    meta: String as PropType<string>,
+    url: String as PropType<string>,
   },
 });
 </script>
