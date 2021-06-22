@@ -1,25 +1,23 @@
 <template>
   <div class="py-10 px-10">
-    <div class="space-y-10">
-      <div v-if="loaded">
-        <div v-once v-for="blog in data.blogs" :key="blog._id">
-          <card
-            :title="blog.message.split('</h5>')[0] + '</h5>'"
-            :content="
-              'LoremIpsumDocet>LoremIpsumDocet>LoremIpsumDocet'.repeat(
-                Math.floor(Math.random() * 2 + 1)
-              )
-            "
-            :url="baseURL+blog._id"
-            :meta="blog.time + ' . 4 min read'"
-            :stars="blog.star"
-            :isBlank="false"
-          />
-        </div>
+    <div v-if="loaded">
+      <div v-once v-for="blog in data.blogs" :key="blog._id">
+        <card
+          :title="blog.message.split('</h5>')[0] + '</h5>'"
+          :content="
+            'LoremIpsumDocet>LoremIpsumDocet>LoremIpsumDocet'.repeat(
+              Math.floor(Math.random() * 2 + 1)
+            )
+          "
+          :url="baseURL + blog._id"
+          :meta="blog.time + ' . 4 min read'"
+          :stars="blog.star"
+          :isBlank="false"
+        />
       </div>
-      <div v-else class="flex justify-center mt-10">
-        <loading />
-      </div>
+    </div>
+    <div v-else class="flex justify-center mt-10">
+      <loading />
     </div>
   </div>
 </template>
@@ -35,11 +33,11 @@ export default defineComponent({
     const loaded = ref(
       data.blogs.length >= data.end - data.start + 1 ? true : false
     );
-    const baseURL="http://localhost:8080/#/blog/";
+    const baseURL = "http://localhost:8080/#/blog/";
     watch(data.blogs, () => {
       loaded.value = true;
     });
-    return { data, loaded,baseURL };
+    return { data, loaded, baseURL };
   },
 });
 </script>

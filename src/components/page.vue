@@ -1,5 +1,5 @@
 <template>
-  <div class="py-10 px-12 space-y-4">
+  <div class="py-10 px-12">
     <div v-if="loaded">
       <h1
         class="font-extrabold text-2xl underline tracking-wide"
@@ -36,10 +36,8 @@ export default defineComponent({
           blog,
           data.blogs.filter((blog) => blog._id === route.params.id)[0]
         );
-
         loaded.value = true;
       } else {
-        console.log(`Network call for ${route.params.id}`);
         const res = await fetch(
           `https://jdev.glitch.me/post/getPost/${route.params.id}`
         );
@@ -47,7 +45,6 @@ export default defineComponent({
         Object.assign(blog, data[0]);
         loaded.value = true;
       }
-      console.log(blog);
     });
 
     return { blog, loaded };

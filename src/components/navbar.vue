@@ -46,7 +46,7 @@
         <router-link class="hrefs" to="/" exact>Home</router-link>
       </div>
       <div class="hover:text-gray-200">
-        <router-link class="hrefs" to="/blog" exact>Blog</router-link>
+        <router-link class="hrefs" to="/blog">Blog</router-link>
       </div>
       <div class="hover:text-gray-200">
         <router-link class="hrefs" to="/about" exact>About</router-link>
