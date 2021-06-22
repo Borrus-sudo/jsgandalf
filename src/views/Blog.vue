@@ -10,9 +10,10 @@
                 Math.floor(Math.random() * 2 + 1)
               )
             "
-            url=""
+            :url="baseURL+blog._id"
             :meta="blog.time + ' . 4 min read'"
             :stars="blog.star"
+            :isBlank="false"
           />
         </div>
       </div>
@@ -34,10 +35,11 @@ export default defineComponent({
     const loaded = ref(
       data.blogs.length >= data.end - data.start + 1 ? true : false
     );
+    const baseURL="http://localhost:8080/#/blog/";
     watch(data.blogs, () => {
       loaded.value = true;
     });
-    return { data, loaded };
+    return { data, loaded,baseURL };
   },
 });
 </script>

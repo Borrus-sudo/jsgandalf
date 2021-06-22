@@ -44,12 +44,12 @@ export default defineComponent({
           `https://jdev.glitch.me/post/getPost/${route.params.id}`
         );
         const data = await res.json();
-        Object.assign(blog, data);
+        Object.assign(blog, data[0]);
         loaded.value = true;
       }
       console.log(blog);
     });
-    
+
     return { blog, loaded };
   },
 });
