@@ -75,9 +75,9 @@
               md:py-4 md:text-lg md:px-10
               cursor-pointer
             "
-            @click="$router.push({ name: 'Podcast' })"
+            @click="$router.push({ name: 'Project' })"
           >
-            Tune in
+            Projects
           </a>
         </div>
       </div>
