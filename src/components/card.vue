@@ -5,11 +5,40 @@
     :href="url"
   >
     <div
-      class="text-gray-500 text-sm font-sans break-words"
+      class="
+        text-gray-500 text-xs
+        sm:text-lg
+        lg:text-lg
+        xl:text-lg
+        2xl:text-lg
+        font-sans
+        break-words
+      "
       v-html="meta"
     ></div>
-    <div class="font-bold text-lg underline break-words" v-html="title"></div>
-    <div class="break-words leading-loose text-sm mb-8 text-gray-400">
+    <div
+      class="
+        font-bold
+        text-sm
+        lg:text-lg
+        xl:text-xl
+        2xl:text-2xl
+        underline
+        break-words
+      "
+      v-html="title"
+    ></div>
+    <div
+      class="
+        break-words
+        leading-loose
+        text-sm
+        xl:text-lg
+        2xl:text-xl
+        mb-8
+        text-gray-400
+      "
+    >
       {{ content }}
     </div>
   </a>
