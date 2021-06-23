@@ -15,11 +15,26 @@
   >
     <div v-if="loaded">
       <h1
-        class="font-extrabold text-2xl underline tracking-wide"
+        class="
+          font-extrabold
+          text-md
+          lg:text-lg
+          xl:text-xl
+          2xl:text-2xl
+          underline
+          tracking-wide
+        "
         v-html="blog.message.split('</h5>')[0] + '</h5>'"
       ></h1>
       <div
-        class="break-words leading-loose text-sm text-gray-300"
+        class="
+          break-words
+          leading-loose
+          text-md
+          xl:text-lg
+          2xl:text-xl
+          text-gray-300
+        "
         v-html="blog.message"
       ></div>
     </div>

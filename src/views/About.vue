@@ -15,7 +15,16 @@
     "
   >
     <h1 class="font-extrabold text-2xl underline tracking-wide">About me</h1>
-    <div class="break-words leading-loose text-sm text-gray-300">
+    <div
+      class="
+        break-words
+        leading-loose
+        text-md
+        xl:text-xl
+        2xl:text-2xl
+        text-gray-300
+      "
+    >
       JSGandalf(he/him) (a.k.a BorrisX) is a
       {{ year - 2006 }} year old self-taught junior full stack web developer
       (P.S. soon to be senior).He is also a game dev enthusiastic and a Potter

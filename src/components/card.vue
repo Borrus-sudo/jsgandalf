@@ -6,7 +6,7 @@
   >
     <div
       class="
-        text-gray-500 text-xs
+        text-gray-400 text-xs
         sm:text-lg
         lg:text-lg
         xl:text-lg
@@ -19,7 +19,7 @@
     <div
       class="
         font-bold
-        text-sm
+        text-md
         lg:text-lg
         xl:text-xl
         2xl:text-2xl
@@ -32,7 +32,7 @@
       class="
         break-words
         leading-loose
-        text-sm
+        text-md
         xl:text-lg
         2xl:text-xl
         mb-8
