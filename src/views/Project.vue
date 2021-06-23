@@ -8,6 +8,7 @@
       2xl:py-10
       px-4
       sm:px-8
+      md:px-10
       lg:px-12
       xl:px-20
       2xl:px-24
