@@ -1,7 +1,7 @@
 <template>
   <div>
     <app-navbar />
-    <div style="margin-top:5.4rem;">
+    <div style="margin-top:5.5rem;">
       <router-view></router-view>
     </div>
     <app-footer />

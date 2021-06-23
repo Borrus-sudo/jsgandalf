@@ -24,7 +24,7 @@
       />
       <div>
         <div class="font-extrabold tracking-wider text-xl">JSGandalf</div>
-        <div class="font-semibold text-gray-300 text-large">by JJ</div>
+        <div class="font-semibold text-gray-300 text-large">{{ insult }}</div>
       </div>
     </div>
     <div class="h-0 w-full sm:w-0 lg:w-0 md:w-0 xl:w-0 2xl:w-0"></div>
@@ -62,10 +62,15 @@
   <!-- <div class="w-full"></div> -->
 </template>
 
-<script lang="ts">
+<script>
 import { defineComponent } from "vue";
+import random from "shakespeare-insult1.1.0";
+const insult = random().split` `.slice(0, 3).join` `;
 export default defineComponent({
   name: "navbar",
+  setup() {
+    return { insult };
+  },
 });
 </script>
 <style scoped>

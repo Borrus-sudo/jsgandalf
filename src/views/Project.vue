@@ -1,5 +1,18 @@
 <template>
-  <div class="py-16 sm:py-9 lg:py-10 xl:py-10 2xl:py-10 px-10">
+  <div
+    class="
+      py-16
+      sm:py-9
+      lg:py-10
+      xl:py-10
+      2xl:py-10
+      px-4
+      sm:px-8
+      lg:px-12
+      xl:px-20
+      2xl:px-24
+    "
+  >
     <div v-if="loaded">
       <div v-for="(project, id) in data.projects" :key="id">
         <card

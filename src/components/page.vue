@@ -1,5 +1,18 @@
 <template>
-  <div class="py-10 px-12">
+  <div
+    class="
+      sm:py-9
+      lg:py-10
+      xl:py-10
+      2xl:py-10
+      py-14
+      px-4
+      sm:px-8
+      lg:px-12
+      xl:px-20
+      2xl:px-24
+    "
+  >
     <div v-if="loaded">
       <h1
         class="font-extrabold text-2xl underline tracking-wide"
