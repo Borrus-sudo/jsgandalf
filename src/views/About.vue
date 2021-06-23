@@ -1,5 +1,5 @@
 <template>
-  <div class="py-10 px-12 space-y-4">
+  <div class="sm:py-9 lg:py-10 xl:py-10 2xl:py-10 py-12 px-14 space-y-4">
     <h1 class="font-extrabold text-2xl underline tracking-wide">About me</h1>
     <div class="break-words leading-loose text-sm text-gray-300">
       JSGandalf(he/him) (a.k.a BorrisX) is a

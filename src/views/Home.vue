@@ -1,5 +1,5 @@
 <template>
-  <div class="px-10 py-12">
+  <div class="sm:py-9 lg:py-10 xl:py-10 2xl:py-10 py-16">
     <div class="text-center">
       <h1
         class="

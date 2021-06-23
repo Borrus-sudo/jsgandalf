@@ -1,20 +1,18 @@
 <template>
-  <div class="py-10 px-10">
-    <div class="space-y-10">
-      <div v-if="loaded">
-        <div v-for="(project, id) in data.projects" :key="id">
-          <card
-            :title="project.name"
-            :content="project.description || 'Random joke:nothing'"
-            :meta="svg + project.url"
-            :url="project.url"
-            stars=""
-          />
-        </div>
+  <div class="py-16 sm:py-9 lg:py-10 xl:py-10 2xl:py-10 px-10">
+    <div v-if="loaded">
+      <div v-for="(project, id) in data.projects" :key="id">
+        <card
+          :title="project.name"
+          :content="project.description || 'Random joke:nothing'"
+          :meta="svg + project.url"
+          :url="project.url"
+          stars=""
+        />
       </div>
-      <div v-else class="flex justify-center mt-10">
-        <loading />
-      </div>
+    </div>
+    <div v-else class="flex justify-center mt-10">
+      <loading />
     </div>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="py-10 px-10">
+  <div class="py-16 sm:py-9 lg:py-10 xl:py-10 2xl:py-10 px-10">
     <div v-if="loaded">
       <div v-once v-for="blog in data.blogs" :key="blog._id">
         <card
