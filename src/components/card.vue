@@ -20,10 +20,10 @@
     <div
       class="
         font-bold
-        text-md
-        lg:text-lg
-        xl:text-xl
-        2xl:text-2xl
+        text-xl
+        lg:text-2xl
+        xl:text-3xl
+        2xl:text-4xl
         underline
         break-words
       "
@@ -33,9 +33,12 @@
       class="
         break-words
         leading-loose
-        text-md
-        xl:text-lg
-        2xl:text-xl
+        text-xs
+        sm:text-sm
+        md:text-md
+        lg:text-lg
+        xl:text-xl
+        2xl:text-2xl
         mb-8
         text-gray-400
       "

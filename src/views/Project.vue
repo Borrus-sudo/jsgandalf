@@ -17,7 +17,7 @@
     <div v-if="loaded">
       <div v-for="(project, id) in data.projects" :key="id">
         <card
-          :title="project.name"
+          :title="project.name.split('/')[1]"
           :content="project.description || 'Random joke:nothing'"
           :meta="svg + project.url"
           :url="project.url"

@@ -31,7 +31,7 @@
       (P.S. soon to be senior).He is also a game dev enthusiastic and a Potter
       head. He is the founder and CEO of JCorp that primarily focuses on
       improving <abbr title="developer experience">DX</abbr> of Vue developers.
-      He is a staunch believer in the tagline "Don't be Dinesh!" and
+      He is a staunch believer in the taglines "Don't be Dinesh!" and
       "Angular===Antediluvian saurian prehistoric juggernaut". His hobbies
       include: Chess, Pixel Art and exploring softwares. This website is built
       using TailwindCSS, Vuejs, Typescript and GraphQl and powered via Netlify.

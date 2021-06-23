@@ -31,10 +31,10 @@
       <h1
         class="
           font-extrabold
-          text-md
-          lg:text-lg
-          xl:text-xl
-          2xl:text-2xl
+          text-xl
+          lg:text-2xl
+          xl:text-3xl
+          2xl:text-4xl
           underline
           tracking-wide
         "
