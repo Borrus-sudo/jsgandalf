@@ -59,7 +59,6 @@
       </div>
     </nav>
   </div>
-  <!-- <div class="w-full"></div> -->
 </template>
 
 <script>
