@@ -1,7 +1,7 @@
 <template>
   <div>
     <app-navbar />
-    <div style="margin-top:5.5rem;">
+    <div style="margin-top: 5.5rem">
       <router-view></router-view>
     </div>
     <app-footer />
@@ -16,4 +16,3 @@ export default defineComponent({
   components: { "app-navbar": navbar, "app-footer": footer },
 });
 </script>
-

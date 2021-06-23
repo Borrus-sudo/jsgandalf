@@ -1,4 +1,3 @@
-
 <template>
   <svg class="svg" width="1.5em" height="2em" viewBox="0 0 24 24">
     <path
