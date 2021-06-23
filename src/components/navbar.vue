@@ -52,9 +52,6 @@
         <router-link class="hrefs" to="/about" exact>About</router-link>
       </div>
       <div class="hover:text-gray-200">
-        <router-link class="hrefs" to="/podcast" exact>Podcast</router-link>
-      </div>
-      <div class="hover:text-gray-200">
         <router-link class="hrefs" to="/projects" exact>Projects</router-link>
       </div>
     </nav>
