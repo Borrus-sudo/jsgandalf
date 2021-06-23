@@ -20,7 +20,7 @@
       class="
         break-words
         leading-loose
-        text-md
+        text-sm
         xl:text-xl
         2xl:text-2xl
         text-gray-300

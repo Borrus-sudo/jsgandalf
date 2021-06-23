@@ -20,7 +20,7 @@
     <div
       class="
         font-bold
-        text-xl
+        text-lg
         lg:text-2xl
         xl:text-3xl
         2xl:text-4xl
@@ -32,13 +32,9 @@
     <div
       class="
         break-words
-        leading-loose
-        text-xs
-        sm:text-sm
-        md:text-md
-        lg:text-lg
-        xl:text-xl
-        2xl:text-2xl
+        text-sm
+        xl:text-lg
+        2xl:text-xl
         mb-8
         text-gray-400
       "
