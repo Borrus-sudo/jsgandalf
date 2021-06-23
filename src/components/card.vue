@@ -38,9 +38,8 @@
         mb-8
         text-gray-400
       "
-    >
-      {{ content }}
-    </div>
+      v-html="content"
+    ></div>
   </a>
 </template>
 
