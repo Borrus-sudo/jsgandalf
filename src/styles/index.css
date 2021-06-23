@@ -21,3 +21,8 @@ body {
     background-color: rgb(179, 212, 252);
     color: black;
 }
+
+.wave-underline {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}

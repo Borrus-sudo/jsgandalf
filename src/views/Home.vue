@@ -21,14 +21,18 @@
           mt-3
           text-base text-gray-500
           leading-looser
-          sm:mt-5 sm:text-lg sm:max-w-xl
-          md:mt-5 md:text-xl
+          sm:mt-5
+          sm:text-lg
+          sm:max-w-xl
+          md:mt-5
+          md:text-xl
           mx-auto
           px-1
         "
       >
         Hey I am JSGandalf, a web dev and game dev enthusiast with a passion for
-        @VueJS and @GraphQL
+        <span class="wave-underline">VueJS</span> and
+        <span class="wave-underline">GraphQL</span>
         <span class="h-5 w-2 inline-block blinking"></span>
       </p>
       <div class="mt-5 sm:mt-8 sm:flex justify-center mx-4">
@@ -48,7 +52,9 @@
               text-white
               bg-indigo-600
               hover:bg-indigo-700
-              md:py-4 md:text-lg md:px-10
+              md:py-4
+              md:text-lg
+              md:px-10
               cursor-pointer
             "
             @click="$router.push({ name: 'Blog' })"
@@ -72,7 +78,9 @@
               text-indigo-700
               bg-indigo-100
               hover:bg-indigo-200
-              md:py-4 md:text-lg md:px-10
+              md:py-4
+              md:text-lg
+              md:px-10
               cursor-pointer
             "
             @click="$router.push({ name: 'Project' })"
