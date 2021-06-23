@@ -7,8 +7,9 @@
     <div
       class="
         text-gray-400 text-xs
-        sm:text-lg
-        lg:text-lg
+        sm:text-sm
+        lg:text-md
+        md:text-md
         xl:text-lg
         2xl:text-lg
         font-sans

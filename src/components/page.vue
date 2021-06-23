@@ -18,8 +18,8 @@
         class="
           text-gray-400 text-xs
           sm:text-sm
-          lg:text-lg
-          md:text-lg
+          lg:text-md
+          md:text-md
           xl:text-lg
           2xl:text-lg
           font-sans
@@ -43,7 +43,7 @@
         class="
           break-words
           leading-loose
-          text-md
+          text-sm
           xl:text-lg
           2xl:text-xl
           text-gray-300
