@@ -17,14 +17,15 @@
       <div
         class="
           text-gray-400 text-xs
-          sm:text-lg
+          sm:text-sm
           lg:text-lg
+          md:text-lg
           xl:text-lg
           2xl:text-lg
           font-sans
           break-words
         "
-        v-html="blog.time+' . 4 min read'"
+        v-html="blog.time + ' . 4 min read'"
       ></div>
       <h1
         class="
