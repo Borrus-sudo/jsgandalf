@@ -23,10 +23,9 @@
       <p
         class="
           mt-3
-          text-base 
+          text-base
           leading-looser
-          sm:mt-5
-          sm:max-w-xl
+          sm:mt-5 sm:max-w-xl
           md:mt-5
           xl:text-lg
           2xl:text-xl
@@ -34,7 +33,7 @@
           mx-auto
           px-1
           text-gray-300
-          "
+        "
       >
         Hey I am JSGandalf, a web dev and game dev enthusiast with a passion for
         <span class="wave-underline">VueJS</span> and
@@ -58,9 +57,7 @@
               text-white
               bg-indigo-600
               hover:bg-indigo-700
-              md:py-4
-              md:text-lg
-              md:px-10
+              md:py-4 md:text-lg md:px-10
               cursor-pointer
             "
             @click="$router.push({ name: 'Blog' })"
@@ -85,9 +82,7 @@
               text-indigo-700
               bg-indigo-100
               hover:bg-indigo-200
-              md:py-4
-              md:text-lg
-              md:px-10
+              md:py-4 md:text-lg md:px-10
               cursor-pointer
             "
             @click="$router.push({ name: 'Project' })"
