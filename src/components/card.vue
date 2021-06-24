@@ -7,9 +7,9 @@
     <div
       class="
         text-gray-400 text-xs
-        sm:text-sm
-        lg:text-md
-        md:text-md
+        sm:text-xs
+        lg:text-ms
+        md:text-sm
         xl:text-lg
         2xl:text-lg
         font-sans
@@ -31,7 +31,15 @@
       v-html="title"
     ></div>
     <div
-      class="break-words text-sm xl:text-lg 2xl:text-xl mb-8 text-gray-300"
+      class="
+        break-words
+        leading-relaxed
+        text-sm
+        xl:text-lg
+        2xl:text-xl
+        mb-8
+        text-gray-300
+      "
       v-html="content"
     ></div>
   </a>

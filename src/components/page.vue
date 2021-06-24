@@ -43,7 +43,10 @@
       <div
         class="
           break-words
-          leading-loose
+          leading-relaxed
+          lg:leading-loose
+          xl:leading-loose
+          2xl:leading-loose
           text-sm
           xl:text-lg
           2xl:text-xl
@@ -51,6 +54,26 @@
         "
         v-html="blog.message"
       ></div>
+
+      <button
+        class="
+          bg-transparent
+          hover:bg-indigo-500
+          text-blue-700
+          font-semibold
+          hover:text-white
+          border border-blue-500
+          hover:border-transparent
+          rounded
+          px-2
+          w-30
+          h-10
+          mt-3
+        "
+        @click="$router.push({ name: 'Blog' })"
+      >
+        Back to Blog Page
+      </button>
     </div>
     <div v-else class="flex justify-center mt-20">
       <loading />
@@ -88,7 +111,16 @@ export default defineComponent({
         if (data.msg && data.msg === "404 not found") {
           router.push("/notFound");
         }
+
         Object.assign(blog, data[0]);
+        const options = {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        };
+        const today = new Date(blog.time);
+        blog.time = today.toLocaleDateString("en-US", options);
         loaded.value = true;
       }
     });
