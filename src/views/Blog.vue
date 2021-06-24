@@ -19,7 +19,7 @@
         <card
           :title="blog.message.split('</h5>')[0] + '</h5>'"
           :content="
-            'LoremIpsumDocet>LoremIpsumDocet>LoremIpsumDocet'.repeat(
+            'LoremIpsumDocet>LoremIpsumDocet'.repeat(
               Math.floor(Math.random() * 2 + 1)
             )
           "

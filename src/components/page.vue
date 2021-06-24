@@ -63,6 +63,7 @@ import { defineComponent, onBeforeMount, reactive, ref } from "vue";
 import { useRoute } from "vue-router";
 import called from "@/utils/keepTrack";
 import loading from "@/assets/MdiLoading.vue";
+import router from "@/router";
 export default defineComponent({
   name: "page",
   components: { loading },
@@ -84,6 +85,9 @@ export default defineComponent({
           `https://jdev.glitch.me/post/getPost/${route.params.id}`
         );
         const data = await res.json();
+        if (data.msg && data.msg === "404 not found") {
+          router.push("/notFound");
+        }
         Object.assign(blog, data[0]);
         loaded.value = true;
       }
