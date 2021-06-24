@@ -11,7 +11,7 @@ const data = reactive<blogs>({ blogs: [], start: 1, end: 5 });
     year: "numeric",
     month: "long",
     day: "numeric",
-  };
+  } as const;
   json.forEach((element: blog) => {
     const today = new Date(element.time);
     element.time = today.toLocaleDateString("en-US", options);
