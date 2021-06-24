@@ -37,6 +37,7 @@
           2xl:text-4xl
           underline
           tracking-wide
+          mb-2
         "
         v-html="blog.message.split('</h5>')[0] + '</h5>'"
       ></h1>
@@ -53,7 +54,7 @@
           2xl:text-xl
           text-gray-300
         "
-        v-html="blog.message"
+        v-html="blog.message.split('</h5>')[1]"
       ></div>
 
       <button
