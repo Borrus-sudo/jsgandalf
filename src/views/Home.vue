@@ -5,7 +5,11 @@
         class="
           text-4xl
           tracking-tighter
-          font-bold
+          font-semibold
+          md:font-bold
+          lg:font-bold
+          xl:font-bold
+          2xl:font-extrabold
           text-gray-900
           sm:text-5xl
           md:text-6xl
@@ -29,7 +33,8 @@
           mb-8
           mx-auto
           px-1
-        "
+          text-gray-300
+          "
       >
         Hey I am JSGandalf, a web dev and game dev enthusiast with a passion for
         <span class="wave-underline">VueJS</span> and
