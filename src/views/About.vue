@@ -33,9 +33,11 @@
       improving <abbr title="developer experience">DX</abbr> of Vue developers.
       He is a staunch believer in the taglines
       <span class="wave-underline">"Don't be Dinesh!"</span> and
-      <span class="wave-underline">"Angular===Antediluvian saurian prehistoric juggernaut"</span>. His hobbies
-      include: Chess, Pixel Art and exploring softwares. This website is built
-      using TailwindCSS, Vuejs, Typescript and GraphQl and powered via Netlify.
+      <span class="wave-underline"
+        >"Angular===Antediluvian saurian prehistoric juggernaut"</span
+      >. His hobbies include: Chess, Pixel Art and exploring softwares. This
+      website is built using TailwindCSS, Vuejs, Typescript and GraphQl and
+      powered via Netlify.
     </div>
     <button
       class="

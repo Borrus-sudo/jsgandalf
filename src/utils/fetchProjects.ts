@@ -4,6 +4,11 @@ interface project {
   url: string;
   description: string;
 }
+interface githubProject {
+  full_name: string;
+  html_url: string;
+  description: string;
+}
 interface exportType {
   projects: project[];
   owner: { login: string; avatar_url: string };
@@ -22,9 +27,9 @@ const toExport = reactive<exportType>({
   } = data[0];
   toExport.owner.login = login;
   toExport.owner.avatar_url = avatar_url;
-  data.forEach((work: any, index: number) => {
+  data.forEach((work:never, index: number) => {
     if (index != 0) {
-      const { full_name: name, html_url: url, description } = work;
+      const { full_name: name, html_url: url, description } = work as githubProject;
       toExport.projects.push({ name, url, description });
     }
   });

@@ -6,7 +6,15 @@ const data = reactive<blogs>({ blogs: [], start: 1, end: 5 });
   const url = "https://jdev.glitch.me/post/getPost";
   const res = await fetch(url);
   const json = await res.json();
+  const options = {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
   json.forEach((element: blog) => {
+    const today = new Date(element.time);
+    element.time = today.toLocaleDateString("en-US", options);
     data.blogs.push(element);
     called.calledBlogs.push(element._id);
   });

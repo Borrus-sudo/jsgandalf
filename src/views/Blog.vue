@@ -50,16 +50,6 @@ export default defineComponent({
     const baseURL = "http://localhost:8080/#/blog/";
     watch(data.blogs, () => {
       loaded.value = true;
-      const options = {
-        weekday: "long",
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-      };
-      for (let blog of data.blogs) {
-        const today = new Date(blog.time);
-        blog.time = today.toLocaleDateString("en-US", options);
-      }
     });
     return { data, loaded, baseURL };
   },

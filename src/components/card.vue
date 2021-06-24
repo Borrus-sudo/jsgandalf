@@ -30,14 +30,7 @@
       v-html="title"
     ></div>
     <div
-      class="
-        break-words
-        text-sm
-        xl:text-lg
-        2xl:text-xl
-        mb-8
-        text-gray-400
-      "
+      class="break-words text-sm xl:text-lg 2xl:text-xl mb-8 text-gray-400"
       v-html="content"
     ></div>
   </a>

@@ -21,11 +21,8 @@
           mt-3
           text-base text-gray-500
           leading-looser
-          sm:mt-5
-          sm:text-lg
-          sm:max-w-xl
-          md:mt-5
-          md:text-xl
+          sm:mt-5 sm:text-lg sm:max-w-xl
+          md:mt-5 md:text-xl
           mx-auto
           px-1
         "
@@ -52,9 +49,7 @@
               text-white
               bg-indigo-600
               hover:bg-indigo-700
-              md:py-4
-              md:text-lg
-              md:px-10
+              md:py-4 md:text-lg md:px-10
               cursor-pointer
             "
             @click="$router.push({ name: 'Blog' })"
@@ -79,9 +74,7 @@
               text-indigo-700
               bg-indigo-100
               hover:bg-indigo-200
-              md:py-4
-              md:text-lg
-              md:px-10
+              md:py-4 md:text-lg md:px-10
               cursor-pointer
             "
             @click="$router.push({ name: 'Project' })"
