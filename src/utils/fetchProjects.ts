@@ -27,9 +27,13 @@ const toExport = reactive<exportType>({
   } = data[0];
   toExport.owner.login = login;
   toExport.owner.avatar_url = avatar_url;
-  data.forEach((work:never, index: number) => {
+  data.forEach((work: never, index: number) => {
     if (index != 0) {
-      const { full_name: name, html_url: url, description } = work as githubProject;
+      const {
+        full_name: name,
+        html_url: url,
+        description,
+      } = work as githubProject;
       toExport.projects.push({ name, url, description });
     }
   });
