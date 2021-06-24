@@ -74,7 +74,6 @@ export default defineComponent({
   setup() {
     const toUnderline = ref(false);
     router.afterEach((to) => {
-      console.log(to.fullPath);
       if (to.fullPath.includes("/blog/")) {
         toUnderline.value = true;
       } else {
