@@ -47,7 +47,7 @@ export default defineComponent({
     const loaded = ref(
       data.blogs.length >= data.end - data.start + 1 ? true : false
     );
-    const baseURL = "http://localhost:8080/#/blog/";
+    const baseURL = "/#/blog/";
     watch(data.blogs, () => {
       loaded.value = true;
     });
