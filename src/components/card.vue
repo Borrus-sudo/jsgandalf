@@ -35,6 +35,7 @@
         break-words
         leading-relaxed
         text-sm
+        md:text-md
         xl:text-lg
         2xl:text-xl
         mb-8

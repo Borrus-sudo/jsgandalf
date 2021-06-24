@@ -48,6 +48,7 @@
           xl:leading-loose
           2xl:leading-loose
           text-sm
+          md:text-md
           xl:text-lg
           2xl:text-xl
           text-gray-300

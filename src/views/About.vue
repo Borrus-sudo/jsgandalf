@@ -21,6 +21,7 @@
         break-words
         leading-loose
         text-sm
+        md:text-md
         xl:text-xl
         2xl:text-2xl
         text-gray-300
