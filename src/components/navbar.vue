@@ -46,10 +46,15 @@
         <router-link class="hrefs" to="/" exact>Home</router-link>
       </div>
       <div class="hover:text-gray-200">
-        <router-link class="hrefs" to="/blog">Blog</router-link>
+        <router-link
+          :class="['hrefs', toUnderline ? 'underline' : '']"
+          to="/blog"
+          exact
+          >Blog</router-link
+        >
       </div>
       <div class="hover:text-gray-200">
-        <router-link class="hrefs" to="/about" exact>About</router-link>
+        <router-link to="/about" class="hrefs" exact>About</router-link>
       </div>
       <div class="hover:text-gray-200">
         <router-link class="hrefs" to="/projects" exact>Projects</router-link>
@@ -59,13 +64,24 @@
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 import random from "shakespeare-insult1.1.0";
+import router from "@/router";
+
 const insult = random().split` `.slice(0, 3).join` `;
 export default defineComponent({
   name: "navbar",
   setup() {
-    return { insult };
+    const toUnderline = ref(false);
+    router.afterEach((to) => {
+      console.log(to.fullPath);
+      if (to.fullPath.includes("/blog/")) {
+        toUnderline.value = true;
+      } else {
+        toUnderline.value = false;
+      }
+    });
+    return { insult, toUnderline };
   },
 });
 </script>

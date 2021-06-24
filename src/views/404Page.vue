@@ -1,5 +1,19 @@
 <template>
-  <div class="py-10 px-12 space-y-4">
+  <div
+    class="
+      sm:py-9
+      lg:py-10
+      xl:py-10
+      2xl:py-10
+      py-14
+      px-4
+      sm:px-8
+      md:px-10
+      lg:px-12
+      xl:px-20
+      2xl:px-24
+    "
+  >
     <h1 class="font-extrabold text-2xl underline tracking-wide">
       404 Page Not Found
     </h1>
