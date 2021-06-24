@@ -17,6 +17,10 @@ body {
     box-sizing: border-box;
 }
 
+body {
+    @apply bg-gradient-to-bl from-gray-800 to-gray-900 object-cover object-center font-default text-white flex flex-col;
+}
+
 *::selection {
     background-color: rgb(179, 212, 252);
     color: black;
