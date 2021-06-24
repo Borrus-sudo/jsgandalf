@@ -5,7 +5,8 @@
         class="
           text-4xl
           tracking-tighter
-          font-semibold
+          font-bold
+          sm:font-bold
           md:font-bold
           lg:font-bold
           xl:font-bold
