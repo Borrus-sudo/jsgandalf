@@ -1,7 +1,7 @@
 <template>
   <a
     class="flex flex-col text-left max-w-lg cursor-pointer"
-    :target="isBlank ? '_blank' : ''"
+    :target="isBlank ? '_blank' : '_self'"
     :href="url"
   >
     <div

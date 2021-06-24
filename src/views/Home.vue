@@ -59,6 +59,7 @@
             "
             @click="$router.push({ name: 'Blog' })"
           >
+            <brawly />
             Read my blog
           </a>
         </div>
@@ -85,6 +86,7 @@
             "
             @click="$router.push({ name: 'Project' })"
           >
+            <github />
             Projects
           </a>
         </div>
@@ -95,8 +97,14 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import MdiBrawlStar from "@/assets/MdiBrawlStar.vue";
+import MdiSocialGithub from "@/assets/MdiSocialGithub.vue";
 export default defineComponent({
   name: "Home",
+  components: {
+    brawly: MdiBrawlStar,
+    github: MdiSocialGithub,
+  },
 });
 </script>
 
