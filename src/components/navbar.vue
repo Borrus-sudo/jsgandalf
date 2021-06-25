@@ -38,7 +38,7 @@
         xl:ml-auto
         2xl:ml-auto
         flex-wrap
-        p-2
+        p-3
         space-x-10
       "
     >

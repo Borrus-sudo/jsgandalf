@@ -9,7 +9,7 @@
       px-4
       sm:px-8
       md:px-10
-      lg:px-12
+      lg:px-10
       xl:px-20
       2xl:px-24
     "
@@ -43,11 +43,10 @@
       ></h1>
       <div
         class="
-          break-words
-          leading-relaxed
-          lg:leading-loose
-          xl:leading-loose
-          2xl:leading-loose
+          break-words break-all
+          leading-loose
+          lg:leading-looser
+          xl:leading-looser
           text-sm
           md:text-md
           xl:text-lg

@@ -9,7 +9,7 @@
       px-4
       sm:px-8
       md:px-10
-      lg:px-12
+      lg:px-10
       xl:px-20
       2xl:px-24
       space-y-4
@@ -22,8 +22,8 @@
         leading-loose
         text-sm
         md:text-md
-        xl:text-xl
-        2xl:text-2xl
+        xl:text-lg
+        2xl:text-xl
         text-gray-300
       "
     >
@@ -33,8 +33,11 @@
       head. He is the founder and CEO of JCorp that primarily focuses on
       improving <abbr title="developer experience">DX</abbr> of Vue developers.
       He is a staunch believer in the taglines
-      <span class="wave-underline">"Don't be Dinesh!"</span> and
-      <span class="wave-underline"
+      <span class="wave-underline break-words break-all"
+        >"Don't be Dinesh!"</span
+      >
+      and
+      <span class="wave-underline break-words break-all"
         >"Angular===Antediluvian saurian prehistoric juggernaut"</span
       >. His hobbies include: Chess, Pixel Art and exploring softwares. This
       website is built using TailwindCSS, Vuejs, Typescript and GraphQl and

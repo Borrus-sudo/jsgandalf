@@ -15,6 +15,7 @@ body {
     min-height: 100vh;
     font-family: var(--font-family);
     box-sizing: border-box;
+    overflow: scroll-y;
 }
 
 body {

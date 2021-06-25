@@ -2,7 +2,15 @@
   <teleport to="body">
     <footer
       style="font-family: 'PT Serif', serif"
-      class="mt-auto flex flex-col border-t p-2 border-gray-600"
+      class="
+        mt-auto
+        flex flex-col
+        border-t
+        p-5
+        justify-center
+        items-center
+        border-gray-600
+      "
       id="footer"
     >
       <ul class="flex justify-center space-x-5">

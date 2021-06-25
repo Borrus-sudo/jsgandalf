@@ -16,10 +16,10 @@
           md:text-6xl
         "
       >
-        <span class="block tracking-tight break-words xl:inline text-white"
+        <span class="block tracking-tight break-words text-white"
           >JSGandalf(he/him)</span
         >
-        <span class="block text-indigo-600 xl:inline">Web Artisan</span>
+        <span class="block text-indigo-600">Web Artisan</span>
       </h1>
       <p
         class="
