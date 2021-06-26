@@ -98,5 +98,4 @@ export default defineComponent({
 .router-link-active {
   @apply underline;
 }
-
 </style>

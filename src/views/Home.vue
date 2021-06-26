@@ -62,9 +62,7 @@
               text-white
               bg-indigo-600
               hover:bg-indigo-700
-              md:py-4
-              md:text-lg
-              md:px-10
+              md:py-4 md:text-lg md:px-10
               cursor-pointer
             "
             @click="$router.push({ name: 'Blog' })"
@@ -89,9 +87,7 @@
               text-indigo-700
               bg-indigo-100
               hover:bg-indigo-200
-              md:py-4
-              md:text-lg
-              md:px-10
+              md:py-4 md:text-lg md:px-10
               cursor-pointer
             "
             @click="$router.push({ name: 'Project' })"

@@ -25,8 +25,7 @@
         xl:text-xl
         2xl:text-2xl
         underline
-        break-words
-        break-all
+        break-words break-all
         text-gray-200
       "
       v-html="title"
