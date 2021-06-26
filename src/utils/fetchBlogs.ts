@@ -15,6 +15,9 @@ const data = reactive<blogs>({ blogs: [], start: 1, end: 5 });
   json.forEach((element: blog) => {
     const today = new Date(element.time);
     element.time = today.toLocaleDateString("en-US", options);
+    element.time = element.time
+      .slice(element.time.indexOf(",") + 1, element.time.length)
+      .trim();
     data.blogs.push(element);
     called.calledBlogs.push(element._id);
   });
