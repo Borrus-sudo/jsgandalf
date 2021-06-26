@@ -65,7 +65,8 @@
           hover:text-white
           border border-blue-500
           hover:border-transparent
-          rounded
+          rounded-md
+          shadow
           px-2
           w-30
           h-8
