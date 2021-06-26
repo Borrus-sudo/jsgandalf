@@ -42,22 +42,20 @@
         space-x-10
       "
     >
-      <div class="hover:text-gray-200">
-        <router-link class="hrefs" to="/" exact>Home</router-link>
+      <div class="hover:text-gray-200 hrefs">
+        <router-link to="/" exact>Home</router-link>
       </div>
-      <div class="hover:text-gray-200">
-        <router-link
-          :class="['hrefs', toUnderline ? 'underline' : '']"
-          to="/blog"
-          exact
-          >Blog</router-link
-        >
+      <div
+        class="hover:text-gray-200"
+        :class="['hrefs', toUnderline ? 'underline' : '']"
+      >
+        <router-link to="/blog" exact>Blog</router-link>
       </div>
-      <div class="hover:text-gray-200">
-        <router-link to="/about" class="hrefs" exact>About</router-link>
+      <div class="hover:text-gray-200 hrefs">
+        <router-link to="/about" exact>About</router-link>
       </div>
-      <div class="hover:text-gray-200">
-        <router-link class="hrefs" to="/projects" exact>Projects</router-link>
+      <div class="hover:text-gray-200 hrefs">
+        <router-link to="/projects" exact>Projects</router-link>
       </div>
     </nav>
   </div>
@@ -100,4 +98,5 @@ export default defineComponent({
 .router-link-active {
   @apply underline;
 }
+
 </style>

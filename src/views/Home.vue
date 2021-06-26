@@ -12,34 +12,38 @@
           xl:font-bold
           2xl:font-extrabold
           text-gray-900
-          sm:text-5xl
-          md:text-6xl
+          sm:text-4xl
+          md:text-5xl
+          lg:text-6xl
+          xl:text-6xl
+          2xl:text-7xl
         "
       >
         <span class="block tracking-tight break-words text-white"
-          >JSGandalf(he/him)</span
+          >Hey I am JSGandalf,</span
         >
-        <span class="block text-indigo-600">Web Artisan</span>
+        <span class="block text-indigo-600">A Web Artisan</span>
       </h1>
       <p
         class="
           mt-3
-          text-base
           leading-looser
-          sm:mt-5 sm:max-w-xl
-          md:mt-5
-          xl:text-lg
+          text-xs
+          sm:text-sm
+          md:text-sm
+          lg:text-lg
+          xl:text-xl
           2xl:text-xl
           mb-8
           mx-auto
           px-1
-          text-gray-300
         "
+        style="color: #8a8a8a"
       >
-        Hey I am JSGandalf, a web dev and game dev enthusiast with a passion for
-        <span class="wave-underline">VueJS</span> and
+        Hey I am JSGandalf, a web dev and game dev enthusiast<br />
+        with a passion for <span class="wave-underline">VueJS</span> and
         <span class="wave-underline">GraphQL</span>
-        <span class="h-5 w-2 inline-block blinking"></span>
+        <span class="h-4 w-2 inline blinking"></span>
       </p>
       <div class="mt-5 sm:mt-8 sm:flex justify-center mx-4">
         <div class="rounded-md shadow">
@@ -58,7 +62,9 @@
               text-white
               bg-indigo-600
               hover:bg-indigo-700
-              md:py-4 md:text-lg md:px-10
+              md:py-4
+              md:text-lg
+              md:px-10
               cursor-pointer
             "
             @click="$router.push({ name: 'Blog' })"
@@ -83,7 +89,9 @@
               text-indigo-700
               bg-indigo-100
               hover:bg-indigo-200
-              md:py-4 md:text-lg md:px-10
+              md:py-4
+              md:text-lg
+              md:px-10
               cursor-pointer
             "
             @click="$router.push({ name: 'Project' })"

@@ -7,13 +7,13 @@
     <div
       class="
         text-gray-400 text-xs
-        sm:text-xs
-        lg:text-ms
-        md:text-sm
+        sm:text-sm
+        lg:text-md
+        md:text-md
         xl:text-lg
         2xl:text-lg
         font-sans
-        break-words
+        break-words break-all
       "
       v-html="meta"
     ></div>
@@ -26,6 +26,7 @@
         2xl:text-2xl
         underline
         break-words
+        break-all
         text-gray-200
       "
       v-html="title"
@@ -34,8 +35,9 @@
       class="
         break-words
         leading-relaxed
-        text-sm
-        md:text-md
+        text-xs
+        sm:text-sm
+        md:text-sm
         xl:text-lg
         2xl:text-xl
         mb-8

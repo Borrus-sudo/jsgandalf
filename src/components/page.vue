@@ -68,7 +68,7 @@
           rounded
           px-2
           w-30
-          h-10
+          h-8
           mt-3
         "
         @click="$router.push({ name: 'Blog' })"
