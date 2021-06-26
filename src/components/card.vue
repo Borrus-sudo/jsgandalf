@@ -8,8 +8,8 @@
       class="
         text-gray-400 text-xs
         sm:text-sm
+        md:text-sm
         lg:text-md
-        md:text-md
         xl:text-lg
         2xl:text-lg
         font-sans
@@ -36,7 +36,7 @@
         leading-relaxed
         text-xs
         sm:text-sm
-        md:text-sm
+        md:text-md
         xl:text-lg
         2xl:text-xl
         mb-8
