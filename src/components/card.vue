@@ -39,7 +39,7 @@
         text-xs
         sm:text-sm
         md:text-md
-        lg:text-lg
+        lg:text-md
         xl:text-lg
         2xl:text-xl
         mb-8

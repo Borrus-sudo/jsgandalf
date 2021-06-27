@@ -50,7 +50,7 @@
           text-sm
           sm:text-md
           md:text-md
-          lg:text-lg
+          lg:text-md
           xl:text-xl
           2xl:text-2xl
           text-gray-300
