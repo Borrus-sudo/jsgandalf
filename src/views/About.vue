@@ -20,6 +20,10 @@
       class="
         break-words
         leading-loose
+        md:leading-looser
+        lg:leading-looser
+        xl:leading-looser
+        2xl:leading-looser
         text-sm
         sm:text-md
         md:text-md

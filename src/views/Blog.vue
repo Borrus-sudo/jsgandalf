@@ -17,7 +17,7 @@
     <div v-if="loaded">
       <div v-once v-for="blog in data.blogs" :key="blog._id">
         <card
-          :title="blog.message.split('</h5>')[0] + '</h5>'"
+          :title="blog.message.split('<h5')[1].split('>')[1].trim()"
           :content="blog.meta"
           :url="baseURL + blog._id"
           :meta="blog.time + ' . 4 min read'"
@@ -44,10 +44,11 @@ export default defineComponent({
       data.blogs.length >= data.end - data.start + 1 ? true : false
     );
     const baseURL = "/#/blog/";
+    const string1 = '<h5 class="title">\'';
     watch(data.blogs, () => {
       loaded.value = true;
     });
-    return { data, loaded, baseURL };
+    return { data, loaded, baseURL, string1 };
   },
 });
 </script>

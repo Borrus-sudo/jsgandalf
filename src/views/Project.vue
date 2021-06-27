@@ -21,7 +21,7 @@
           :content="project.description || 'Random joke:nothing'"
           :meta="svg + project.url"
           :url="project.url"
-          stars=""
+          :stars="0"
         />
       </div>
     </div>
