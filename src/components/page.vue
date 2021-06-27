@@ -48,9 +48,11 @@
           lg:leading-looser
           xl:leading-looser
           text-sm
+          sm:text-md
           md:text-md
-          xl:text-lg
-          2xl:text-xl
+          lg:text-lg
+          xl:text-xl
+          2xl:text-2xl
           text-gray-300
         "
         v-html="blog.message.split('</h5>')[1]"
