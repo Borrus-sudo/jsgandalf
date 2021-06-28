@@ -44,17 +44,12 @@
       <div
         class="
           break-words break-all
-          leading-loose
-          md:leading-looser
-          lg:leading-looser
-          xl:leading-looser
-          2xl:leading-looser
+          leading-looser
           text-sm
           sm:text-md
           md:text-md
-          lg:text-md
-          xl:text-xl
-          2xl:text-2xl
+          xl:text-lg
+          2xl:text-xl
           text-gray-300
         "
         v-html="blog.message.split('</h5>')[1]"
