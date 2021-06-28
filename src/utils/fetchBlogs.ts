@@ -12,6 +12,7 @@ const data = reactive<blogs>({ blogs: [], start: 1, end: 5 });
     month: "long",
     day: "numeric",
   } as const;
+  json.reverse();
   json.forEach((element: blog) => {
     const today = new Date(element.time);
     element.time = today.toLocaleDateString("en-US", options);

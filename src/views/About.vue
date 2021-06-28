@@ -7,10 +7,10 @@
       2xl:py-10
       py-14
       px-4
-      sm:px-8
-      md:px-10
-      lg:px-10
-      xl:px-20
+      sm:px-10
+      md:px-12
+      lg:px-12
+      xl:px-24
       2xl:px-24
       space-y-4
     "

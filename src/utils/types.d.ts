@@ -3,6 +3,7 @@ export type blog = {
   message: string;
   time: string;
   star: number;
+  duration: string;
   _id: string;
 };
 export interface blogs {

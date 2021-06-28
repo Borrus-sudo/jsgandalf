@@ -7,10 +7,10 @@
       2xl:py-10
       py-14
       px-4
-      sm:px-8
-      md:px-10
-      lg:px-10
-      xl:px-20
+      sm:px-10
+      md:px-12
+      lg:px-12
+      xl:px-24
       2xl:px-24
     "
   >
@@ -26,7 +26,7 @@
           font-sans
           break-words
         "
-        v-html="blog.time + ' . 4 min read'"
+        v-html="blog.time + ` . ${blog.duration}`"
       ></div>
       <h1
         class="
@@ -93,7 +93,13 @@ export default defineComponent({
   components: { loading },
   setup() {
     const route = useRoute();
-    let blog = reactive({ message: "", time: "", star: 0, _id: "" });
+    let blog = reactive({
+      message: "",
+      time: "",
+      star: 0,
+      _id: "",
+      duration: "",
+    });
     const loaded = ref(false);
     onBeforeMount(async () => {
       if (called.calledBlogs.includes(route.params.id)) {
@@ -130,3 +136,11 @@ export default defineComponent({
   },
 });
 </script>
+<style scoped>
+.hljs {
+  @apply overflow-x-auto;
+}
+.hljs > code {
+  @apply whitespace-pre;
+}
+</style>

@@ -20,7 +20,7 @@
           :title="blog.message.split('<h5')[1].split('>')[1].trim()"
           :content="blog.meta"
           :url="baseURL + blog._id"
-          :meta="blog.time + ' . 4 min read'"
+          :meta="blog.time + ` . ${blog.duration}`"
           :stars="blog.star"
           :isBlank="false"
         />
