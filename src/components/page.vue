@@ -42,7 +42,7 @@
         v-html="blog.message.split('</h5>')[0] + '</h5>'"
       ></h1>
       <div
-        style="line-height:1.8;"
+        style="line-height: 1.8"
         class="
           break-words break-all
           text-sm
