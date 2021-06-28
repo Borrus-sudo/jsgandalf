@@ -47,7 +47,8 @@
       </div>
       <div
         class="hover:text-gray-200"
-        :class="['hrefs', toUnderline ? 'underline' : '']"
+        :class="['hrefs', toUnderline ? ['border-b', 'border-gray-100'] : '']"
+        :style="toUnderline ? { 'border-spacing': '2px' } : {}"
       >
         <router-link to="/blog" exact>Blog</router-link>
       </div>
@@ -96,6 +97,7 @@ export default defineComponent({
   background: var(--gradient);
 }
 .router-link-active {
-  @apply underline;
+  border-spacing: 4px;
+  @apply border-b border-gray-100;
 }
 </style>
