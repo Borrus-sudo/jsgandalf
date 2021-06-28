@@ -20,7 +20,9 @@
     <div
       class="
         font-bold
-        text-md
+        text-sm
+        sm:text-md
+        md:text-md
         lg:text-lg
         xl:text-xl
         2xl:text-2xl
