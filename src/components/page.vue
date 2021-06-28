@@ -44,7 +44,7 @@
       <div
         class="
           break-words break-all
-          leading-looser
+          leading-loose
           text-sm
           sm:text-md
           md:text-md

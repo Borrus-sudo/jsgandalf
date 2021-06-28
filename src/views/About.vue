@@ -19,13 +19,13 @@
     <div
       class="
         break-words
-        leading-looser
         text-sm
         sm:text-md
         md:text-md
         xl:text-lg
         2xl:text-xl
         text-gray-300
+        leading-loose
       "
     >
       JSGandalf(he/him) (a.k.a BorrisX) is a
