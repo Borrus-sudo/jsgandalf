@@ -17,6 +17,7 @@
   >
     <h1 class="font-extrabold text-2xl underline tracking-wide">About me</h1>
     <div
+      style="line-height: 1.8"
       class="
         break-words
         text-sm
@@ -25,7 +26,6 @@
         xl:text-lg
         2xl:text-xl
         text-gray-300
-        leading-loose
       "
     >
       JSGandalf(he/him) (a.k.a BorrisX) is a
