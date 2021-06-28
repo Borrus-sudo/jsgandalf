@@ -1,4 +1,4 @@
-# webartisan.dev
+# jsgandalf
 
 ## Project setup
 ```
