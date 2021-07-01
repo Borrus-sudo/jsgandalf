@@ -8,10 +8,9 @@ module.exports = {
             [
                 new PrerenderSPAPlugin({
                     staticDir: path.join(__dirname, "dist"),
-                    routes: ["/", "/about", "/projects"],
+                    routes: ["/", "/about"],
                     renderer: new Renderer({
                         maxConcurrentRoutes: 2,
-                        renderAfterTime: 5000,
                         headless: true,
                     }),
                 }),
