@@ -19,10 +19,9 @@
         <card
           :title="blog.message.split('<h5')[1].split('>')[1].trim()"
           :content="blog.meta"
-          :url="baseURL + blog._id"
           :meta="blog.time + ` . ${blog.duration}`"
           :stars="blog.star"
-          :isBlank="false"
+          @click="$router.push({ name: 'subblog', params: { id: blog._id } })"
         />
       </div>
     </div>

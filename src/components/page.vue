@@ -131,7 +131,6 @@ export default defineComponent({
         loaded.value = true;
       }
     });
-
     return { blog, loaded };
   },
 });
