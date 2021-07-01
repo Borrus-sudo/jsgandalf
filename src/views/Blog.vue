@@ -43,7 +43,7 @@ export default defineComponent({
     const loaded = ref(
       data.blogs.length >= data.end - data.start + 1 ? true : false
     );
-    const baseURL = "/#/blog/";
+    const baseURL = "/blog/";
     const string1 = '<h5 class="title">\'';
     watch(data.blogs, () => {
       loaded.value = true;
