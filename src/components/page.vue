@@ -44,7 +44,7 @@
       <div
         style="line-height: 1.8"
         class="
-          break-words break-all
+          break-words
           text-sm
           sm:text-md
           md:text-md
