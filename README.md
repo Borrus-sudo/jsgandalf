@@ -24,4 +24,4 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## App graph
-![./graph.svg](GraphSVG)
+![GraphSVG](./graph.svg)
