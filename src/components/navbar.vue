@@ -64,7 +64,7 @@
 
 <script>
 import { defineComponent, ref } from "vue";
-import random from "shakespeare-insult1.1.0";
+import { random } from "shakespeare-insult1.1.0";
 import router from "@/router";
 
 const insult = random().split` `.slice(0, 3).join` `;

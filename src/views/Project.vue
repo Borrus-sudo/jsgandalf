@@ -15,6 +15,33 @@
     "
   >
     <div v-if="loaded">
+      <div>
+        <h1
+          class="
+            font-extrabold
+            text-xl
+            lg:text-2xl
+            xl:text-3xl
+            2xl:text-4xl
+            underline
+            tracking-wide
+            mb-2
+          "
+        >
+          📌Pinned Projects
+        </h1>
+        <img
+          src="https://github-readme-stats.vercel.app/api/pin/?username=Borrus-sudo&repo=rapide-structs&theme=monokai"
+        />
+        <img
+          src="https://github-readme-stats.vercel.app/api/pin/?username=Borrus-sudo&repo=awesome-stack&theme=monokai"
+          alt=""
+        />
+        <img
+          src="https://github-readme-stats.vercel.app/api/pin/?username=Borrus-sudo&repo=jsgandalf&theme=monokai"
+          alt=""
+        />
+      </div>
       <div v-for="(project, id) in data.projects" :key="id">
         <card
           :title="project.name.split('/')[1]"
