@@ -37,8 +37,8 @@
           mb-8
           mx-auto
           px-1
-          text-gray-300
         "
+        style="color: #eee7df"
       >
         Hey I am JSGandalf, a web dev and game dev enthusiast<br />
         with a passion for <span class="wave-underline">VueJS</span> and
@@ -61,9 +61,7 @@
               text-monokai-default
               bg-indigo-600
               hover:bg-indigo-700
-              md:py-4
-              md:text-lg
-              md:px-10
+              md:py-4 md:text-lg md:px-10
               cursor-pointer
             "
             @click="$router.push({ name: 'Blog' })"
@@ -88,9 +86,7 @@
               text-indigo-700
               bg-indigo-100
               hover:bg-indigo-200
-              md:py-4
-              md:text-lg
-              md:px-10
+              md:py-4 md:text-lg md:px-10
               cursor-pointer
             "
             @click="$router.push({ name: 'Project' })"
