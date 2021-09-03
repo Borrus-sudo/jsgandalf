@@ -68,12 +68,12 @@
           shadow
           px-2
           w-30
-          h-8
+          h-6
           mt-3
         "
         @click="$router.push({ name: 'Blog' })"
       >
-        Back to Blog Page
+        cd ..
       </button>
     </div>
     <div v-else class="flex justify-center mt-20">

@@ -41,8 +41,9 @@
         md:text-md
         lg:text-md
         xl:text-lg
-        2xl:text-xl
+        2xl:text-lg
         mb-8
+        max-w-lg
         text-gray-300
       "
       v-html="content"

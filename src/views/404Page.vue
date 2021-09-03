@@ -1,23 +1,7 @@
 <template>
-  <div
-    class="
-      sm:py-9
-      lg:py-10
-      xl:py-10
-      2xl:py-10
-      py-14
-      px-4
-      sm:px-8
-      md:px-10
-      lg:px-12
-      xl:px-20
-      2xl:px-24
-    "
-  >
-    <h1 class="font-extrabold text-2xl underline tracking-wide">
-      404 Page Not Found
-    </h1>
-    <div class="break-words leading-loose">
+  <BaseLayout>
+    <template v-slot:header> 404 Page Not Found </template>
+    <template v-slot:content class="break-words leading-loose">
       The page you were looking for is not found.
       <br />
       <br />
@@ -39,12 +23,14 @@
       >
         Back to Home Page
       </button>
-    </div>
-  </div>
+    </template>
+  </BaseLayout>
 </template>
 <script>
+import BaseLayout from "@/layouts/BaseLayout.vue";
 import { defineComponent } from "vue";
 export default defineComponent({
   name: "404Page",
+  components: { BaseLayout },
 });
 </script>
