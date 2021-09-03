@@ -51,6 +51,6 @@ export default defineComponent({
 </script>
 <style scoped>
 .svg:hover {
-  @apply fill-current text-gray-300;
+  @apply fill-current text-monokai-icon-background-default;
 }
 </style>

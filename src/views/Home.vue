@@ -3,7 +3,7 @@
     <div class="text-center">
       <h1
         class="
-          text-4xl
+          text-3xl
           tracking-tighter
           font-bold
           sm:font-bold
@@ -12,17 +12,17 @@
           xl:font-bold
           2xl:font-extrabold
           text-gray-900
-          sm:text-4xl
-          md:text-5xl
-          lg:text-6xl
+          md:text-4xl
+          lg:text-5xl
           xl:text-6xl
           2xl:text-7xl
         "
       >
-        <span class="block tracking-tight break-words text-white"
+        <span
+          class="block tracking-tight break-words text-monokai-title-default"
           >Hey I am JSGandalf,</span
         >
-        <span class="block text-indigo-600">A Web Artisan</span>
+        <span class="block text-monokai-default">A Web Artisan</span>
       </h1>
       <p
         class="
@@ -37,8 +37,8 @@
           mb-8
           mx-auto
           px-1
+          text-gray-300
         "
-        style="color: #8a8a8a"
       >
         Hey I am JSGandalf, a web dev and game dev enthusiast<br />
         with a passion for <span class="wave-underline">VueJS</span> and
@@ -49,7 +49,6 @@
         <div class="rounded-md shadow">
           <a
             class="
-              w-full
               flex
               items-center
               justify-center
@@ -59,10 +58,12 @@
               text-base
               font-medium
               rounded-md
-              text-white
+              text-monokai-default
               bg-indigo-600
               hover:bg-indigo-700
-              md:py-4 md:text-lg md:px-10
+              md:py-4
+              md:text-lg
+              md:px-10
               cursor-pointer
             "
             @click="$router.push({ name: 'Blog' })"
@@ -87,7 +88,9 @@
               text-indigo-700
               bg-indigo-100
               hover:bg-indigo-200
-              md:py-4 md:text-lg md:px-10
+              md:py-4
+              md:text-lg
+              md:px-10
               cursor-pointer
             "
             @click="$router.push({ name: 'Project' })"

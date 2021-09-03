@@ -2,18 +2,7 @@
   <BaseLayout>
     <template v-slot:header>About me</template>
     <template v-slot:content>
-      <div
-        style="line-height: 1.8"
-        class="
-          break-words
-          text-sm
-          sm:text-md
-          md:text-md
-          xl:text-lg
-          2xl:text-lg
-          text-gray-300
-        "
-      >
+      <div>
         Hi I am JSGandalf (a.k.a BorrisX or Borrus-sudo), 15 year old junior
         full stack web dev. (P.S. soon to be senior). I am game dev enthusiastic
         and a Potter head. I am the founder and CEO of JCorp that primarily

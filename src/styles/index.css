@@ -19,7 +19,7 @@ body {
 }
 
 body {
-    @apply bg-gradient-to-bl from-gray-800 to-gray-900 object-cover object-center font-default text-white flex flex-col;
+    @apply bg-monokai-background-default font-default text-white flex flex-col;
 }
 
 *::selection {

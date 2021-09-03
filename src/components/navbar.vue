@@ -42,20 +42,20 @@
         space-x-10
       "
     >
-      <div class="hover:text-gray-200 hrefs">
+      <div class="hover:text-monokai-icon-background-default hrefs">
         <router-link to="/" exact>Home</router-link>
       </div>
       <div
-        class="hover:text-gray-200"
+        class="hover:text-monokai-icon-background-default"
         :class="['hrefs', toUnderline ? ['border-b', 'border-gray-100'] : '']"
         :style="toUnderline ? { 'border-spacing': '2px' } : {}"
       >
         <router-link to="/blog" exact>Blog</router-link>
       </div>
-      <div class="hover:text-gray-200 hrefs">
+      <div class="hover:text-monokai-icon-background-default hrefs">
         <router-link to="/about" exact>About</router-link>
       </div>
-      <div class="hover:text-gray-200 hrefs">
+      <div class="hover:text-monokai-icon-background-default hrefs">
         <router-link to="/projects" exact>Projects</router-link>
       </div>
     </nav>

@@ -1,21 +1,29 @@
 <template>
   <div
     class="
-      sm:py-9
+      sm:py-12
       lg:py-10
       xl:py-10
       2xl:py-10
       py-14
       px-4
-      sm:px-10
-      md:px-12
-      lg:px-12
+      sm:px-14
+      md:px-14
+      lg:px-16
       xl:px-24
       2xl:px-24
       space-y-4
     "
   >
-    <h1 class="font-extrabold text-2xl underline tracking-wide">
+    <h1
+      class="
+        font-extrabold
+        text-2xl
+        underline
+        tracking-wide
+        text-monokai-default
+      "
+    >
       <slot name="header"></slot>
     </h1>
     <div
@@ -26,8 +34,8 @@
         sm:text-md
         md:text-md
         xl:text-lg
-        2xl:text-lg
-        text-gray-300
+        2xl:text-xl
+        text-monokai-default
       "
     >
       <slot name="content"></slot>

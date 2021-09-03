@@ -38,6 +38,7 @@
           underline
           tracking-wide
           mb-2
+          text-monokai-default
         "
         v-html="blog.message.split('</h5>')[0] + '</h5>'"
       ></h1>
@@ -50,7 +51,7 @@
           md:text-md
           xl:text-lg
           2xl:text-xl
-          text-gray-300
+          text-monokai-default
         "
         v-html="blog.message.split('</h5>')[1]"
       ></div>
