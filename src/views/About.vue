@@ -18,17 +18,14 @@
         Netlify.
       </div>
       <br />
-      <div class="">
+      <div>
         <img
           src="https://github-readme-stats.vercel.app/api?username=Borrus-sudo&show_icons=true&theme=monokai"
         />
         <br />
-        <img
-          src="https://awesome-stack.glitch.me/api/v1/cards?name=Borrus-sudo&repos=jsgandalf,vue-generator-graph,awesome-stack&theme=monokai"
-          class="w-60"
-        />
+        <MdiAwesomeStack />
       </div>
-
+      <br />
       <button
         class="
           bg-transparent
@@ -52,11 +49,12 @@
 <script>
 import { defineComponent } from "vue";
 import BaseLayout from "@/layouts/BaseLayout.vue";
+import MdiAwesomeStack from "@/assets/MdiAwesomeStack.vue";
 export default defineComponent({
   setup() {
     const date = new Date();
     return { year: date.getFullYear() };
   },
-  components: { BaseLayout },
+  components: { BaseLayout, MdiAwesomeStack },
 });
 </script>

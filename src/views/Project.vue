@@ -3,32 +3,48 @@
     <template v-slot:header>📌Pinned Projects</template>
     <template v-slot:content>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-1">
-        <div class="px-4">
+        <a
+          href="https://github.com/Borrus-sudo/awesome-stack"
+          target="_blank"
+          class="px-4"
+        >
           <img
             src="https://github-readme-stats.vercel.app/api/pin/?username=Borrus-sudo&repo=awesome-stack&theme=monokai"
             alt=""
           />
           <br />
-        </div>
-        <div class="px-4">
+        </a>
+        <a
+          href="https://github.com/Borrus-sudo/jsgandalf"
+          target="_blank"
+          class="px-4"
+        >
           <img
             src="https://github-readme-stats.vercel.app/api/pin/?username=Borrus-sudo&repo=jsgandalf&theme=monokai"
             alt=""
           />
           <br />
-        </div>
-        <div class="px-4">
+        </a>
+        <a
+          href="https://github.com/Borrus-sudo/rapide-structs"
+          target="_blank"
+          class="px-4"
+        >
           <img
             src="https://github-readme-stats.vercel.app/api/pin/?username=Borrus-sudo&repo=rapide-structs&theme=monokai"
           />
           <br />
-        </div>
-        <div class="px-4">
+        </a>
+        <a
+          href="https://github.com/Borrus-sudo/vue-generator-graph"
+          target="_blank"
+          class="px-4"
+        >
           <img
             src="https://github-readme-stats.vercel.app/api/pin/?username=Borrus-sudo&repo=vue-generator-graph&theme=monokai"
             alt=""
           />
-        </div>
+        </a>
       </div>
     </template>
   </BaseLayout>

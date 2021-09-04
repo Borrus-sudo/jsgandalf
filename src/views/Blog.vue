@@ -1,5 +1,6 @@
 <template>
   <BaseLayout>
+    <template v-slot:header>Blog</template>
     <template v-slot:content>
       <div v-if="loaded">
         <div v-once v-for="blog in data.blogs" :key="blog._id">

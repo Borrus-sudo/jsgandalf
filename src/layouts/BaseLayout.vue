@@ -1,11 +1,11 @@
 <template>
   <div
     class="
-      sm:py-12
-      lg:py-10
-      xl:py-10
-      2xl:py-10
-      py-14
+      sm:py-10
+      lg:py-9
+      xl:py-9
+      2xl:py-9
+      py-12
       px-4
       sm:px-14
       md:px-14
