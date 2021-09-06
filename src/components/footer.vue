@@ -17,7 +17,7 @@
         <a href="" target="_blank"> <instagram /></a>
         <a href="https://github.com/Borrus-sudo" target="_blank"> <github /></a>
         <a href="" target="_blank"> <discord /></a>
-        <a href="https://twitter.com/BorrisX006" target="_blank">
+        <a href="https://twitter.com/ts_gandalf" target="_blank">
           <twitter
         /></a>
         <a href="https://www.twitch.tv/deathchargrocks21" target="_blank">

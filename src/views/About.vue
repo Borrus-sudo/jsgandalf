@@ -23,6 +23,12 @@
           src="https://github-readme-stats.vercel.app/api?username=Borrus-sudo&show_icons=true&theme=monokai"
         />
         <br />
+        <img
+          src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Borrus-sudo&theme=monokai"
+          class="border-white border rounded-md"
+          alt=""
+        />
+        <br />
         <MdiAwesomeStack />
       </div>
       <br />
