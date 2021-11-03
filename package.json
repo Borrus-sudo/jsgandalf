@@ -9,7 +9,7 @@
     },
     "dependencies": {
         "autoprefixer": "9",
-        "core-js": "^3.19.0",
+        "core-js": "^3.19.1",
         "postcss": "7",
         "shakespeare-insult1.1.0": "^1.2.1",
         "tailwindcss": "npm:@tailwindcss/postcss7-compat",
